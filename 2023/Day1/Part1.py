@@ -24,7 +24,7 @@ for text in textSplit:
         if text[pos].isdigit():
             secondNumber = text[pos];
             break;
-        pos = pos - 1;
+        pos -= 1;
 
     fullNumber = firstNumber + secondNumber;
     print(fullNumber);
