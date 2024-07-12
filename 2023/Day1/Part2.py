@@ -6,15 +6,6 @@ textSplit = fullText.split("\n");
 
 answer = 0;
 
-def changeTextToNumberFirst(checkText, number, text):
-    if text.count(checkText) > 0:
-        text = text.replace(checkText, str(number), 1)
-    return text
-
-def changeTextToNumberLast(checkText, number, text):
-    if text.count(checkText) > 0:
-        text = text.replace(checkText, str(number))
-    return text
         
 def firstIndex(text, checkText, number, numberPos):
     if text.count(checkText) > 0:
@@ -30,7 +21,6 @@ def lastIndex(text, checkText, number, numberPos):
         test = text.count(checkText);
         start = 0;
         truePos = 0;
-
         while test > 0:
             truePos = text.index(checkText, start)
 
@@ -46,8 +36,6 @@ for text in textSplit:
 
     print("--------");
     print(text);
-
-    
 
     firstNumberPos = ["none", 0, 1000];
     lastNumberPos = ["none", 0, 0];
@@ -94,7 +82,6 @@ for text in textSplit:
                 secondNumber = lastNumberPos[1];
             break;
         pos = pos - 1;
-
 
     fullNumber = str(firstNumber) + str(secondNumber);
     print(fullNumber);
