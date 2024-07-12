@@ -1,10 +1,23 @@
 
-Text = "1 is a 3";
+Text = """1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet""";
 
-print(Text);
-print(Text[0]);
-print(Text[-1]);
+TextSplit = Text.split("\n");
 
-print("-------");
+for x in TextSplit:
+    print(x);
 
-print(Text[0] + Text[-1]);
+    print("-------");
+    print(x[0]);
+    print(x[-1]);
+
+    print("-------");
+    print(x[0] + x[-1]);
+
+
+
+
+
+
